@@ -55,19 +55,19 @@ namespace Crypto_Lab02
             double shann = shannon.ShannonEntropy(resultEN.ToLower());
             Console.WriteLine($"Количество информации в ФИО {shannon.AmountOfInformation(resulName, shann)}");
             Console.WriteLine(resulName);
-
             byte[] bytes = Encoding.ASCII.GetBytes(resulName);
             String ASCII = "";
             foreach (var b in bytes)
                 ASCII += b;
 
-            //хз каку энтропию для ASCII брать
             Console.WriteLine("ASCII: Кол-во инф-ции в ФИО " + shannon.AmountOfInformation(ASCII, shann));
+            //Console.WriteLine("ASCII: " + 1*8*ASCII.Length );
 
             //task4
-            Console.WriteLine("С условной вероятностью ошибки 0,1 " + shannon.AmountOfInformationWithMistake(resulName, 0.9));
-            Console.WriteLine("С условной вероятностью ошибки 0,5 " + shannon.AmountOfInformationWithMistake(resulName, 0.5));
-            Console.WriteLine("С условной вероятностью ошибки 1 " + shannon.AmountOfInformationWithMistake(resulName, 1));
+            //Эффективная энтропия = Шеннон - Условная энтропия
+            Console.WriteLine("С условной вероятностью ошибки 0,1 " + shannon.AmountOfInformationWithMistake(shann, resulName, 0.9));
+            Console.WriteLine("С условной вероятностью ошибки 0,5 " + shannon.AmountOfInformationWithMistake(shann, resulName, 0.5));
+            Console.WriteLine("С условной вероятностью ошибки 1 " + shannon.AmountOfInformationWithMistake(shann, resulName, 1));
 
             Console.ReadLine();
         }

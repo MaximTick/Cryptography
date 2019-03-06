@@ -45,10 +45,10 @@ namespace Crypto_Lab02
             return result;
         }
 
-        public double AmountOfInformationWithMistake(string message, double q)
+        public double AmountOfInformationWithMistake(double entropy, string message, double q)
         {
             double result = 0.00;
-            result = 1 - (-(1 - q) * Math.Log((1 - q), 2) - q * Math.Log(q, 2)) * message.Length;
+            result = entropy - (-(1 - q) * Math.Log((1 - q), 2) - q * Math.Log(q, 2)) * message.Length;
             return result;
         }
     }
