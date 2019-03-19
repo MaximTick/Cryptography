@@ -14,27 +14,9 @@ namespace VegenerChipher
 
         Vegener vegener = new Vegener();
         private void buttonEncrypt_Click(object sender, EventArgs e)
-        {
-            if (radioButtonGamma.Checked)
+        {        
+            if (textBoxKeyWord.Text.Length > 0)
             {
-                string s;
-
-                StreamReader sr = new StreamReader("in.txt", Encoding.GetEncoding(1251));
-                StreamWriter sw = new StreamWriter("out.txt", true, Encoding.GetEncoding(1251));
-
-                while (!sr.EndOfStream)
-                {
-                    s = sr.ReadLine();
-                    sw.WriteLine(vegener.Encode(s, vegener.Generate_Pseudorandom_KeyWord(s.Length, 100)));
-                }
-
-                sr.Close();
-                sw.Close();
-            }
-            else
-            {
-                if (textBoxKeyWord.Text.Length > 0)
-                {
                     string s;
 
                     StreamReader sr = new StreamReader("in.txt", Encoding.GetEncoding(1251));
@@ -49,32 +31,14 @@ namespace VegenerChipher
                     sr.Close();
                     sw.Close();
                     MessageBox.Show("Сообщение зашифровано");
-                }
+            }
                 else
                     MessageBox.Show("Введите ключевое слово!");
-            }
+            
         }
 
         private void buttonDecipher_Click(object sender, EventArgs e)
-        {
-            if (radioButtonGamma.Checked)
-            {
-                string s;
-
-                StreamReader sr = new StreamReader("out.txt", Encoding.GetEncoding(1251));
-                StreamWriter sw = new StreamWriter("decode.txt", true, Encoding.GetEncoding(1251));
-
-                while (!sr.EndOfStream)
-                {
-                    s = sr.ReadLine();
-                    sw.WriteLine(vegener.Decode(s, vegener.Generate_Pseudorandom_KeyWord(s.Length, 100)));
-                }
-
-                sr.Close();
-                sw.Close();
-            }
-            else
-            {
+        {                       
                 if (textBoxKeyWord.Text.Length > 0)
                 {
                     string s;
@@ -94,7 +58,7 @@ namespace VegenerChipher
                 }
                 else
                     MessageBox.Show("Введите ключевое слово!");
-            }
+            
         }
     }
 }

@@ -32,7 +32,6 @@ namespace VegenerChipher
                 if ((keyword_index + 1) == keyword.Length)
                     keyword_index = 0;
             }
-
             return result;
         }
 
@@ -63,16 +62,16 @@ namespace VegenerChipher
         }
 
 
-        public string Generate_Pseudorandom_KeyWord(int length, int startSeed)
-        {
-            Random rand = new Random(startSeed);
+        //public string Generate_Pseudorandom_KeyWord(int length, int startSeed)
+        //{
+        //    Random rand = new Random(startSeed);
 
-            string result = "";
+        //    string result = "";
 
-            for (int i = 0; i < length; i++)
-                result += characters[rand.Next(0, characters.Length)];
+        //    for (int i = 0; i < length; i++)
+        //        result += characters[rand.Next(0, characters.Length)];
 
-            return result;
-        }
+        //    return result;
+        //}
     }
 }

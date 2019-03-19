@@ -17,7 +17,6 @@ namespace MySubstitutionCipher
         }
  
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -34,7 +33,8 @@ namespace MySubstitutionCipher
                 for (int i = 0; i < text.Length; i++)
                 {
                     if (substitution.ContainsKey(text[i].ToString()))                    
-                        ans.Append(substitution[text[i].ToString()]);                    
+                        ans.Append(substitution[text[i].ToString()]);
+                    
                     else
                         ans.Append(text[i]);
                     textBox2.Text = ans.ToString();
