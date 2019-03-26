@@ -12,6 +12,35 @@ int Euclidean(int val1, int val2)
 		}
 		return val1 + val2;
 }
+
+/* calculates a * *x + b * *y = gcd(a, b) = *d */
+void extended_euclid(long a, long b, long *x, long *y, long *d)
+{
+	long q, r, x1, x2, y1, y2;
+	if (b == 0) {
+		*d = a, *x = 1, *y = 0;
+		return;
+	}
+	x2 = 1, x1 = 0, y2 = 0, y1 = 1;
+	while (b > 0) {
+		q = a / b, r = a - q * b;
+
+		*x = x2 - q * x1, *y = y2 - q * y1;
+		a = b, b = r;
+		x2 = x1, x1 = *x, y2 = y1, y1 = *y;
+	}
+	*d = a, *x = x2, *y = y2;
+}
+
+/* computes the inverse of a modulo n */
+long inverse(long a, long n)
+{
+	long d, x, y;
+	extended_euclid(a, n, &x, &y, &d);
+	if (d == 1) return x;
+	return 0;
+}
+
 int main() {
 
 	int val1, val2;
@@ -20,12 +49,18 @@ int main() {
 	printf("Euclidean - input first variable: ");
 	scanf("%d", &val2);
 	printf("NOD Euclidean = %d\n", Euclidean(val1, val2));
-
 	
-	//Extended
-	int a, b;
-	int p = 1, q = 0, r = 0, s = 1;
-	int x, y;
+
+	long value_a = 5, value_n = 7;
+	printf("the inverse of %ld modulo %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
+	value_a = 4589, value_n = 789;
+	printf("the inverse of %ld modulo %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
+
+	//Extended Euclideab
+	
+	long a, b;
+	long p = 1, q = 0, r = 0, s = 1;
+	long x, y;
 
 	printf("input first variable: ");
 	scanf("%d", &a);
@@ -55,5 +90,7 @@ int main() {
 		y = s;
 	}
 	printf("Output %d and %d\n", x, y);
+	//End Extended Euclidean
+
 	return 0;
 }
