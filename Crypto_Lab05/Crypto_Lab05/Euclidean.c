@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <locale.h>
+#include <math.h>
 
 int Euclidean(int val1, int val2)
 {
@@ -13,35 +15,37 @@ int Euclidean(int val1, int val2)
 		return val1 + val2;
 }
 
-/* calculates a * *x + b * *y = gcd(a, b) = *d */
-void extended_euclid(long a, long b, long *x, long *y, long *d)
+void gcdext(int a, int b, int *d, int *x, int *y)
 {
-	long q, r, x1, x2, y1, y2;
-	if (b == 0) {
-		*d = a, *x = 1, *y = 0;
+	int s;
+	if (b == 0)
+	{
+		*d = a; *x = 1; *y = 0;
 		return;
 	}
-	x2 = 1, x1 = 0, y2 = 0, y1 = 1;
-	while (b > 0) {
-		q = a / b, r = a - q * b;
-
-		*x = x2 - q * x1, *y = y2 - q * y1;
-		a = b, b = r;
-		x2 = x1, x1 = *x, y2 = y1, y1 = *y;
-	}
-	*d = a, *x = x2, *y = y2;
+	gcdext(b, a % b, d, x, y);
+	s = *y;
+	*y = *x - (a / b) * (*y);
+	*x = s;
 }
 
-/* computes the inverse of a modulo n */
 long inverse(long a, long n)
 {
 	long d, x, y;
-	extended_euclid(a, n, &x, &y, &d);
-	if (d == 1) return x;
+	gcdext(a, n, &d, &x, &y);
+	if (d == 1) 
+	{ 
+		if (x < 0) {
+			x = -(abs(x) % n) + n;
+		}
+		return x; 
+	}
 	return 0;
 }
 
 int main() {
+
+	setlocale(LC_ALL, "RUS");
 
 	int val1, val2;
 	printf("Euclidean - input first variable: ");
@@ -51,46 +55,10 @@ int main() {
 	printf("NOD Euclidean = %d\n", Euclidean(val1, val2));
 	
 
-	long value_a = 5, value_n = 7;
-	printf("the inverse of %ld modulo %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
-	value_a = 4589, value_n = 789;
-	printf("the inverse of %ld modulo %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
-
-	//Extended Euclideab
-	
-	long a, b;
-	long p = 1, q = 0, r = 0, s = 1;
-	long x, y;
-
-	printf("input first variable: ");
-	scanf("%d", &a);
-	printf("input second variable: ");
-	scanf("%d", &b);
-
-	while (a && b) {
-		if (a >= b) {
-			a = a - b;
-			p = p - r;
-			q = q - s;
-		}
-		else
-		{
-			b = b - a;
-			r = r - p;
-			s = s - q;
-		}
-	}
-	if (a) {
-		x = p;
-		y = q;
-	}
-	else
-	{
-		x = r;
-		y = s;
-	}
-	printf("Output %d and %d\n", x, y);
-	//End Extended Euclidean
+	long value_a = 13, value_n = 27;
+	printf("the inverse of %ld module %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
+	value_a = 7, value_n = 17;
+	printf("the inverse of %ld module %2ld is %ld\n", value_a, value_n, inverse(value_a, value_n));
 
 	return 0;
 }
