@@ -1,0 +1,39 @@
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe.config
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.pdb
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.csprojResolveAssemblyReference.cache
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.LSBAlgorithm.resources
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.Properties.Resources.resources
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.GenerateResource.Cache
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.exe
+c:\users\khang\documents\visual studio 2017\Projects\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.pdb
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe.config
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\bin\Debug\LSBAlgorithm.pdb
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.csprojResolveAssemblyReference.cache
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.LSBAlgorithm.resources
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.Properties.Resources.resources
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.GenerateResource.cache
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.CoreCompileInputs.cache
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.exe
+D:\WorkSpace\LSBAlgorithm\LSBAlgorithm\obj\Debug\LSBAlgorithm.pdb
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe.config
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.pdb
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.LSBAlgorithm.resources
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.Properties.Resources.resources
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.GenerateResource.cache
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.exe
+C:\Users\khangvoxuan\Documents\GitHub\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.pdb
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe.config
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.exe
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\bin\Debug\LSBAlgorithm.pdb
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csprojAssemblyReference.cache
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.LSBAlgorithm.resources
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.Properties.Resources.resources
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.GenerateResource.cache
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.csproj.CoreCompileInputs.cache
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.exe
+D:\study3course\6thsem\Cryptography\Labs\Crypto_Lab12\LSBSteganography\LSBAlgorithm\obj\Debug\LSBAlgorithm.pdb
